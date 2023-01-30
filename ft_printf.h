@@ -6,7 +6,7 @@
 /*   By: tbui-quo <tbui-quo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 13:43:08 by tbui-quo          #+#    #+#             */
-/*   Updated: 2023/01/30 13:56:18 by tbui-quo         ###   ########.fr       */
+/*   Updated: 2023/01/30 14:14:51 by tbui-quo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		ft_printf(const char *s, ...);
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
 int		ft_putnbr_base(long int n, const char *base, int nbr_base, int len);
+int		ft_putnbr_uns(long unsigned int n, const char *base, int nbr_base, int len);
 int		ft_print_pointer(void *ptr);
 
 #endif
