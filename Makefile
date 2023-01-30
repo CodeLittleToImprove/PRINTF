@@ -6,13 +6,13 @@
 #    By: tbui-quo <tbui-quo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/23 13:00:46 by tbui-quo          #+#    #+#              #
-#    Updated: 2023/01/23 13:02:25 by tbui-quo         ###   ########.fr        #
+#    Updated: 2023/01/25 14:48:10 by tbui-quo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libftprintf.a
 # Name des kompilierten Programms
-SRCS	=	ft_printf.c ft_putchar.c ft_flagcheck.c ft_putstr.c ft_putnbr_base.c ft_puthex.c ft_putpointer.c ft_numlen_base.c
+SRCS	=	ft_printf.c ft_utils.c
 # Hier alle zu kompilierenden .c-Dateien erfassen
 OBJS	=	${SRCS:.c=.o}
 # Damit nur veränderte .c-Dateien in .o-Dateien kompiliert werden
@@ -40,7 +40,7 @@ compile:
 
 makelibft:
 			@echo "$(MAGENTA)Compiling:"
-			MAKE -C libft
+			make -C libft
 			cp libft/libft.a ${NAME}
 clean:
 			${RM} ${OBJS}

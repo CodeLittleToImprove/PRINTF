@@ -1,0 +1,1 @@
+gcc -o ft_printf ft_printf.c ft_utils.c -L./libft -lft

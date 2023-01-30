@@ -1,0 +1,3 @@
+gcc -g ft_printf.c ft_utils.c -L./libft -lft
+
+valgrind --leak-check=yes ./a.out
