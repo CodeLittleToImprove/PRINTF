@@ -6,7 +6,7 @@
 /*   By: tbui-quo <tbui-quo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 13:57:07 by tbui-quo          #+#    #+#             */
-/*   Updated: 2023/01/30 14:00:08 by tbui-quo         ###   ########.fr       */
+/*   Updated: 2023/01/30 16:29:05 by tbui-quo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,20 @@
 
 static int	flag_check(const char format, va_list args)
 {
+	size_t	start_len;
+
+	start_len = 0;
 	if (format == 'd' || format == 'i')
-		return (ft_putnbr_base(va_arg(args, int), "0123456789", 10, 0));
+		return (ft_putnbr_base(va_arg(args, int), "0123456789", 10, start_len));
 	if (format == 'u')
 		return (ft_putnbr_base(va_arg(args, unsigned int),
-				"0123456789", 10, 0));
+				"0123456789", 10, start_len));
 	if (format == 'x')
 		return (ft_putnbr_base(va_arg(args, unsigned int),
-				"0123456789abcdef", 16, 0));
+				"0123456789abcdef", 16, start_len));
 	if (format == 'X')
 		return (ft_putnbr_base(va_arg(args, unsigned int),
-				"0123456789ABCDEF", 16, 0));
+				"0123456789ABCDEF", 16, start_len));
 	if (format == 'c')
 		return (ft_putchar((char)va_arg(args, int)));
 	if (format == 's')
