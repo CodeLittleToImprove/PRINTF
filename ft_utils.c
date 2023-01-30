@@ -6,7 +6,7 @@
 /*   By: tbui-quo <tbui-quo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 14:12:14 by tbui-quo          #+#    #+#             */
-/*   Updated: 2023/01/30 13:57:31 by tbui-quo         ###   ########.fr       */
+/*   Updated: 2023/01/30 17:37:42 by tbui-quo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,12 +68,14 @@ int	ft_putnbr_uns(long unsigned int n, const char *base, int nbr_base, int len)
 
 int	ft_print_pointer(void *ptr)
 {
+	int	len;
 	int	prefix_offset;
 
+	len = 0;
 	prefix_offset = 2;
 	ft_putstr("0x");
 	return (ft_putnbr_uns((long unsigned int) ptr, "0123456789abcdef", 16,
-			0 + prefix_offset));
+			len + prefix_offset));
 }
 
 // int    main(void)
