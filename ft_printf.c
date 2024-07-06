@@ -83,3 +83,50 @@ int	ft_printf(const char *format, ...)
 	// 	printf(" %p %p ", 0, 0);
 	// 	ft_printf(" %p %p ", 0, 0);
 	// }
+
+// int main(void)
+// {
+// 	int num = 42;
+// 	char c = 'A';
+// 	char *str = "Hello, world!";
+// 	void *ptr = &num;
+//
+// 	// Comparing %c
+// 	printf("Standard printf: %c\n", c);
+// 	ft_printf("Custom  ft_printf: %c\n", c);
+//
+// 	// Comparing %s
+// 	printf("Standard printf: %s\n", str);
+// 	ft_printf("Custom  ft_printf: %s\n", str);
+//
+// 	// Comparing %p
+// 	printf("Standard printf: %p\n", ptr);
+// 	ft_printf("Custom  ft_printf: %p\n", ptr);
+//
+// 	// Comparing %d
+// 	printf("Standard printf: %d\n", num);
+// 	ft_printf("Custom  ft_printf: %d\n", num);
+//
+// 	// Comparing %i
+// 	printf("Standard printf: %i\n", num);
+// 	ft_printf("Custom  ft_printf: %i\n", num);
+//
+// 	// Comparing %u
+// 	unsigned int unum = 42;
+// 	printf("Standard printf: %u\n", unum);
+// 	ft_printf("Custom  ft_printf: %u\n", unum);
+//
+// 	// Comparing %x
+// 	printf("Standard printf: %x\n", num);
+// 	ft_printf("Custom  ft_printf: %x\n", num);
+//
+// 	// Comparing %X
+// 	printf("Standard printf: %X\n", num);
+// 	ft_printf("Custom  ft_printf: %X\n", num);
+//
+// 	// Comparing %%
+// 	printf("Standard printf: %%\n");
+// 	ft_printf("Custom  ft_printf: %%\n");
+//
+// 	return 0;
+// }
